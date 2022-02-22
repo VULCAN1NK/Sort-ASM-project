@@ -1,0 +1,33 @@
+import java.util.*;
+
+class nTwoT
+{
+    public static void main(String[] args)        //bubble sort
+    { Scanner sc=new Scanner(System.in);
+      int a[] = new int[8];
+      for(int i=0; i<8; i++)
+      {
+        a[i]= sc.nextInt();
+
+      }
+
+      int k, j, temp;
+   for(k = 0; k < 8; k++)
+    {
+      for(j = k+1; j < 8; j++)
+        {
+            if(a[j] < a[k])
+            {
+                temp = a[k];
+                a[k] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+    for(int t=0;t<8;t++)
+    {
+        System.out.print(a[t]+ " ");
+    }
+    }
+
+}
